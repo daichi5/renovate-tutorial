@@ -10,9 +10,13 @@
         "npm"
       ],
       "matchUpdateTypes": ["minor","patch"],
-      "additionalBranchPrefix": "{{packageFileDir}}-{{depType}}",
+      "additionalBranchPrefix": "{{packageFileDir}}-{{depType}}-",
       "commitMessageSuffix": "({{packageFileDir}})",
       "groupName": "npm"
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": true
     }
   ],
   "branchPrefix": "renovate-from-actions/"
