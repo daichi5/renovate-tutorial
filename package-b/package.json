@@ -14,7 +14,7 @@
     "typescript": "3.1"
   },
   "dependencies": {
-    "dayjs": "1.1",
-    "lodash": "3.1"
+    "dayjs": "1.11",
+    "lodash": "3.10"
   }
 }
