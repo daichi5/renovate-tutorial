@@ -9,6 +9,7 @@
     {
       "matchUpdateTypes": ["minor","patch"],
       "additionalBranchPrefix": "{{packageFileDir}}-{{depType}}-",
+      "commitMessageSuffix": "-{{packageFileDir}}-{{depType}}",
       "groupName": "minor-patch"
     },
     {
