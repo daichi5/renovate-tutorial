@@ -31,7 +31,7 @@ jobs:
       with:
         fetch-depth: 0
 
-    - uses: renovatebot/github-action@v38.1.13
+    - uses: renovatebot/github-action@v40.1.5
       with:
         renovate-version: ${{ env.RENOVATE_VERSION }}
         token: ${{ secrets.RENOVATE_BOT_TOKEN }}
