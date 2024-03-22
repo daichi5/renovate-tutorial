@@ -10,7 +10,7 @@
         "npm"
       ],
       "matchUpdateTypes": ["minor","patch"],
-      "additionalBranchPrefix": "{{packageFileDir}}-",
+      "additionalBranchPrefix": "{{packageFileDir}}-{{depType}}",
       "commitMessageSuffix": "({{packageFileDir}})",
       "groupName": "npm"
     }
