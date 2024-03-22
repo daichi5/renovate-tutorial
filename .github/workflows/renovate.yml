@@ -1,0 +1,38 @@
+name: Renovate
+
+on:
+  push: {}
+  workflow_dispatch: {}
+  schedule:
+  - cron: '0 3 * * WED' # Run workflow at 12:00 JST every wednesday
+
+env:
+  RENOVATE_VERSION: 35.159.7
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    - name: Check valid renovate configuration
+      uses: suzuki-shunsuke/github-action-renovate-config-validator@v0.1.3
+      with:
+        validator_version: ${{ env.RENOVATE_VERSION }}
+        config_file_path: ./renovate.json
+
+  renovate:
+    runs-on: ubuntu-latest
+    # NOTE: デフォルトブランチかつ、Push以外のイベントであれば実行する
+    if: ${{ contains(github.ref, github.event.repository.default_branch) && github.event_name != 'push' }}
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - uses: renovatebot/github-action@v38.1.13
+      with:
+        renovate-version: ${{ env.RENOVATE_VERSION }}
+        token: ${{ secrets.RENOVATE_BOT_TOKEN }}
+        configurationFile: ./renovate.json
