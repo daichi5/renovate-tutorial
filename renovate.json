@@ -6,9 +6,12 @@
   "prHourlyLimit": 100,
   "packageRules": [
     {
-      "matchUpdateTypes": ["major"],
-      "dependencyDashboardApproval": true
+      "matchManagers": [
+        "npm"
+      ],
+      "additionalBranchPrefix": "{{packageFileDir}}-",
+      "commitMessageSuffix": "({{packageFileDir}})",
+      "groupName": "npm"
     }
-  ],
-  "additionalBranchPrefix": "{{parentDir}}-"
+  ]
 }
