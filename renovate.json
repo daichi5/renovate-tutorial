@@ -3,11 +3,13 @@
   "extends": [
     "config:recommended"
   ],
+
   "prHourlyLimit": 100,
   "packageRules": [
     {
       "matchUpdateTypes": ["minor","patch"],
-      "groupName": "{{packageFileDir}}-{{devType}}"
+      "additionalBranchPrefix": "{{packageFileDir}}-{{devType}}",
+      "groupName": "minor/patch updates"
     },
     {
       "matchUpdateTypes": ["major"],
