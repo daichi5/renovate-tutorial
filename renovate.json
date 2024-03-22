@@ -9,6 +9,7 @@
       "matchManagers": [
         "npm"
       ],
+      "matchUpdateTypes": ["minor","patch"],
       "additionalBranchPrefix": "{{packageFileDir}}-",
       "commitMessageSuffix": "({{packageFileDir}})",
       "groupName": "npm"
