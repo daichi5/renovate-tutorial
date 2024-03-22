@@ -3,7 +3,7 @@
   "extends": [
     "config:recommended"
   ],
-  "prHourlyLimit": 15,
+  "prHourlyLimit": 100,
   "packageRules": [
     {
       "matchUpdateTypes": ["major"],
