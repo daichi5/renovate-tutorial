@@ -8,8 +8,7 @@
     {
       "matchUpdateTypes": ["minor","patch"],
       "additionalBranchPrefix": "{{packageFileDir}}-{{depType}}-",
-      "commitMessageSuffix": "({{packageFileDir}})",
-      "groupName": "{{packageFileDir}}"
+      "groupName": "{{packageFileDir}}-{{devType}}"
     },
     {
       "matchUpdateTypes": ["major"],
