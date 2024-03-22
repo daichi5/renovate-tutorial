@@ -10,7 +10,7 @@
       "matchUpdateTypes": ["minor","patch"],
       "additionalBranchPrefix": "{{packageFileDir}}-{{depType}}-",
       "commitMessageSuffix": "({{packageFileDir}}-{{depType}})",
-      "groupName": "minor-patch-sample"
+      "groupName": "minor-patch-exapmle"
     },
     {
       "matchUpdateTypes": ["major"],
