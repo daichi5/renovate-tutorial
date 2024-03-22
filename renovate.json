@@ -8,8 +8,8 @@
   "packageRules": [
     {
       "matchUpdateTypes": ["minor","patch"],
-      "additionalBranchPrefix": "{{packageFileDir}}-{{devType}}",
-      "groupName": "minor/patch updates"
+      "additionalBranchPrefix": "{{packageFileDir}}-{{depType}}-",
+      "groupName": "minor-patch"
     },
     {
       "matchUpdateTypes": ["major"],
