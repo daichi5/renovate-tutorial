@@ -11,10 +11,10 @@
   "license": "ISC",
   "devDependencies": {
     "ts-node": "^9.0.0",
-    "typescript": "3.1"
+    "typescript": "3.9"
   },
   "dependencies": {
-    "dayjs": "1.1",
-    "lodash": "3.1"
+    "dayjs": "1.11",
+    "lodash": "3.10"
   }
 }
