@@ -6,13 +6,10 @@
   "prHourlyLimit": 100,
   "packageRules": [
     {
-      "matchManagers": [
-        "npm"
-      ],
       "matchUpdateTypes": ["minor","patch"],
       "additionalBranchPrefix": "{{packageFileDir}}-{{depType}}-",
       "commitMessageSuffix": "({{packageFileDir}})",
-      "groupName": "npm"
+      "groupName": "{{packageFileDir}}"
     },
     {
       "matchUpdateTypes": ["major"],
