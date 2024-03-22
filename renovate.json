@@ -7,7 +7,7 @@
   "packageRules": [
     {
       "matchUpdateTypes": ["minor","patch"],
-      "additionalBranchPrefix": "{{packageFileDir}}-{{depType}}-",
+      "additionalBranchPrefix": "{{packageFileDir}}-{{depType}}-sample",
       "groupName": "{{packageFileDir}}-{{devType}}"
     },
     {
