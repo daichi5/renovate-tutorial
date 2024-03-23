@@ -17,5 +17,11 @@
       "dependencyDashboardApproval": true
     }
   ],
-  "branchPrefix": "renovate-from-actions/"
+  "branchPrefix": "renovate-from-actions/",
+  "vulnerabilityAlerts": {
+    "groupName": "vulnerability-alerts",
+    "commitMessageSuffix": "[SECURITY]",
+    "branchTopic": "{{{packageFileDir}}}-{{{depName}}}-vulnerability",
+    "prCreation": "immediate"
+  }
 }
