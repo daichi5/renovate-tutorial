@@ -8,6 +8,7 @@
     "@date-io/date-fns": "2.10.0",
     "@date-io/moment": "2.10.0",
     "commander": "2.20.3",
+    "follow-redirects": "^1.15.4",
     "lodash": "4.17.21",
     "zod": "3.1"
   },
