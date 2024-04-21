@@ -1,10 +1,10 @@
 name: Renovate
 
 on:
-  push: {}
+  # push: {}
   workflow_dispatch: {}
-  schedule:
-  - cron: '0 3 * * WED' # Run workflow at 12:00 JST every wednesday
+  # schedule:
+  # - cron: '0 3 * * WED' # Run workflow at 12:00 JST every wednesday
 
 env:
   RENOVATE_VERSION: 37.265.0
